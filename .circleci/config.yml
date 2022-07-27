@@ -8,7 +8,7 @@ jobs: # a collection of steps
       - checkout # special step to check out source code to working directory
       - run:
           name: update-npm
-          command: 'sudo npm install -g'
+          command: 'sudo apt install npm -g npm@latest'
       - run:
           name: install-snyk
           command: 'sudo npm install -g snyk'     
